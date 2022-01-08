@@ -1,0 +1,8 @@
+MAIN SOURCE - https://medium.com/@nathan_149/making-a-fully-automated-youtube-channel-20f2fa57e469
+1) CONFIG.PY ADDED USERNAME & PASSWORD
+2) SCRAPE_VIDEOS.PY ADDED USERNAME & PASSWORD & OUTPUT FOLDER IN IF__NAME__=="__MAIN__"
+3) Used Merger code to compile my videos :) 
+Resources - https://zulko.github.io/moviepy/getting_started/compositing.html
+Videos - https://www.youtube.com/watch?v=t4va-o5mcBs&ab_channel=JieJenn
+4) SOURCE YOUTUBE API - https://github.com/SteBurz/youtube-uploader
+   GITHUB - https://github.com/SteBurz/youtube-uploader
