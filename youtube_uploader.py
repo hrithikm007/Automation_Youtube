@@ -97,8 +97,8 @@ def resumable_upload(request, options):
                 if 'id' in response:
                     print('The video with the id %s was successfully uploaded!' % response['id'])
 
-                    # upload thumbnail for Video
-                    options.insertThumbnail(youtube, response['id'])
+                    # # upload thumbnail for Video
+                    # options.insertThumbnail(youtube, response['id'])
                 else:
                     exit('The upload failed with an unexpected response: %s' % response)
         except HttpError as e:
@@ -122,7 +122,7 @@ def resumable_upload(request, options):
             time.sleep(sleep_seconds)
 
 
-if __name__ != '__main__':
+if __name__ == '__main__':
     args = videoDetails.Video()
     youtube = get_authenticated_service()
 
