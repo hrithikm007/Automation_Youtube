@@ -8,7 +8,7 @@ from instalooter.cli.login import login
 def scrapeVideos(username = "",
                  password = "",
                  output_folder = "",
-                 days = 3 ):
+                 days = 2 ):
         
     print("Starting Scraping")
 
@@ -36,9 +36,9 @@ def scrapeVideos(username = "",
         except Exception as e:
             print("Skipped acc " + acc + "because of");
             print(e);
-
+    looter.logout()
 
 if __name__ == "__main__":
     scrapeVideos(username = "deals_fetcher_telegram",
-                 password = "python007",
+                 password = "hrithik007",
                  output_folder = "Downloaded Reels/" )
