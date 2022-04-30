@@ -80,7 +80,8 @@ def initialize_upload(youtube, options):
         media_body=MediaFileUpload(videoPath, chunksize=-1, resumable=True)
     )
 
-    resumable_upload(insert_request, options)
+    x = resumable_upload(insert_request, options)
+    return x
 
 
 # This method implements an exponential backoff strategy to resume a
@@ -96,6 +97,7 @@ def resumable_upload(request, options):
             if response is not None:
                 if 'id' in response:
                     print('The video with the id %s was successfully uploaded!' % response['id'])
+                    return response['id']
 
                     # # upload thumbnail for Video
                     # options.insertThumbnail(youtube, response['id'])
